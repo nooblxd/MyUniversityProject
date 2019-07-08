@@ -5,6 +5,7 @@ Target (Target 1), 0x0000 // Tools: 'MCS-51'
 
 Group (Source Group 1)
 
+File 1,1,<.\ZHUJI.C><ZHUJI.C> 0x0 
 
 
 Options 1,0,0  // Target 'Target 1'
@@ -31,7 +32,7 @@ Options 1,0,0  // Target 'Target 1'
  OutName (ZHUJI)
  GenApp=1
  GenLib=0
- GenHex=0
+ GenHex=1
  Debug=1
  Browse=1
  LstDir (.\)
@@ -51,7 +52,7 @@ Options 1,0,0  // Target 'Target 1'
  T51FL=80
  CBANKS5=0
  XBANKS5=0
- RCB51 { 0,0,0,0,0,0,0,0,0 }
+ RCB51 { 0,0,0,0,0,0,0,1,0 }
  RXB51 { 0,0,0,0,0,0,0,0,0 }
  OCM51 { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
  OCR51 { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }

@@ -3,7 +3,7 @@
 <pre>
 <h1>µVision2 Build Log</h1>
 <h2>Project:</h2>
-C:\Users\L\Desktop\dxq\ZHUJI\ZHUJI.uv2
+C:\Users\L\Documents\GitHub\dxq\dxq\ZHUJI\ZHUJI.uv2
 Project File Date:  07/08/2019
 
 <h2>Output:</h2>
@@ -12,9 +12,5 @@ compiling ZHUJI.C...
 ZHUJI.C(83): warning C235: parameter 1: different types
 linking...
 Program Size: data=41.0 xdata=0 code=500
-"ZHUJI" - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-linking...
-Program Size: data=41.0 xdata=0 code=500
 creating hex file from "ZHUJI"...
-"ZHUJI" - 0 Error(s), 0 Warning(s).
+"ZHUJI" - 0 Error(s), 1 Warning(s).
