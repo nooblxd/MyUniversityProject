@@ -1,0 +1,157 @@
+BL51 BANKED LINKER/LOCATER V5.03                                                        07/08/2019  10:45:38  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V5.03, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE CONGJI0.obj TO CONGJI0
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  CONGJI0.obj (CONGJI0)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  CONGJI0 (CONGJI0)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0005H     UNIT         ?DT?CONGJI0
+            IDATA   000DH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     008CH     UNIT         ?C_C51STARTUP
+            CODE    008FH     001CH     UNIT         ?PR?MAIN?CONGJI0
+            CODE    00ABH     0013H     UNIT         ?PR?INIT?CONGJI0
+            CODE    00BEH     000DH     UNIT         ?PR?CAPTURE_NUM?CONGJI0
+            CODE    00CBH     000BH     UNIT         ?PR?_DELAY?CONGJI0
+            CODE    00D6H     000AH     UNIT         ?PR?_SEND?CONGJI0
+            CODE    00E0H     0007H     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   CONGJI0 (CONGJI0)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?CONGJI0
+  +--> ?C_INITSEG
+
+?PR?MAIN?CONGJI0
+  +--> ?PR?INIT?CONGJI0
+  +--> ?PR?CAPTURE_NUM?CONGJI0
+  +--> ?PR?_SEND?CONGJI0
+
+
+
+SYMBOL TABLE OF MODULE:  CONGJI0 (CONGJI0)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+BL51 BANKED LINKER/LOCATER V5.03                                                      07/08/2019  10:45:38  PAGE 2
+
+
+  -------         MODULE        CONGJI0
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  C:00D6H         PUBLIC        _send
+  B:0098H.0       PUBLIC        RI
+  D:0008H         PUBLIC        ADDR
+  B:0098H.1       PUBLIC        TI
+  C:008FH         PUBLIC        main
+  C:00BEH         PUBLIC        capture_num
+  B:00A0H.3       PUBLIC        start
+  D:0099H         PUBLIC        SBUF
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  C:00ABH         PUBLIC        init
+  D:0009H         PUBLIC        rec_data
+  D:000AH         PUBLIC        temp
+  D:000BH         PUBLIC        rec_addr
+  D:008DH         PUBLIC        TH1
+  B:0098H.3       PUBLIC        TB8
+  C:00CBH         PUBLIC        _Delay
+  D:008BH         PUBLIC        TL1
+  B:0098H.5       PUBLIC        SM2
+  B:00A0H.4       PUBLIC        oe
+  B:0088H.6       PUBLIC        TR1
+  D:000CH         PUBLIC        getdata
+  -------         PROC          MAIN
+  C:008FH         LINE#         17
+  C:008FH         LINE#         18
+  C:008FH         LINE#         19
+  C:0092H         LINE#         21
+  C:0092H         LINE#         22
+  C:0092H         LINE#         23
+  C:0095H         LINE#         25
+  C:0097H         LINE#         26
+  C:009AH         LINE#         27
+  C:009FH         LINE#         28
+  C:009FH         LINE#         29
+  C:00A1H         LINE#         36
+  C:00A4H         LINE#         37
+  C:00A9H         LINE#         39
+  C:00A9H         LINE#         40
+  -------         ENDPROC       MAIN
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        m
+  C:00CBH         LINE#         42
+  C:00CBH         LINE#         43
+  C:00CBH         LINE#         44
+  C:00D5H         LINE#         46
+  -------         ENDPROC       _DELAY
+  -------         PROC          INIT
+  C:00ABH         LINE#         47
+  C:00ABH         LINE#         48
+  C:00ABH         LINE#         49
+  C:00AEH         LINE#         50
+  C:00B1H         LINE#         52
+BL51 BANKED LINKER/LOCATER V5.03                                                      07/08/2019  10:45:38  PAGE 3
+
+
+  C:00B4H         LINE#         53
+  C:00B7H         LINE#         54
+  C:00B9H         LINE#         56
+  C:00BBH         LINE#         57
+  C:00BDH         LINE#         58
+  -------         ENDPROC       INIT
+  -------         PROC          CAPTURE_NUM
+  C:00BEH         LINE#         60
+  C:00BEH         LINE#         61
+  C:00BEH         LINE#         62
+  C:00C0H         LINE#         63
+  C:00C2H         LINE#         66
+  C:00C4H         LINE#         67
+  C:00C7H         LINE#         68
+  C:00CAH         LINE#         71
+  -------         ENDPROC       CAPTURE_NUM
+  -------         PROC          _SEND
+  D:0007H         SYMBOL        c
+  C:00D6H         LINE#         73
+  C:00D6H         LINE#         74
+  C:00D6H         LINE#         75
+  C:00D8H         LINE#         76
+  C:00DAH         LINE#         77
+  C:00DDH         LINE#         79
+  C:00DFH         LINE#         80
+  -------         ENDPROC       _SEND
+  -------         ENDMOD        CONGJI0
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?CONGJI0
+
+Program Size: data=14.0 xdata=0 code=231
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)
